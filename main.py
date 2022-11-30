@@ -47,6 +47,10 @@ while not is_game_over():
     if not guess_is_valid(guess):
         continue
 
+    if guess in guesses:
+        print("You can't use this word again!")
+        continue
+
     if guess in full_list:
         guessed += 1
         guesses.append(guess)
