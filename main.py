@@ -43,6 +43,7 @@ words = words_fetcher.fetch_words(min_letters=9, max_letters=9)
 full_list = words_fetcher.fetch_words(min_letters=3, max_letters=9)
 word = words[random.randrange(0, len(words))]
 
+players_name = input("Enter your name: ")
 print(f"Can you make up {WORDS_TO_WIN} words from letters in word provided by me?")
 print(f"Your word is '{word}'")
 
